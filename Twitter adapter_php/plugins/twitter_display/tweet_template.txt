@@ -1,0 +1,32 @@
+<div class="tweet">
+  <div class="tweet_id hidden">[tweet_id]</div>
+  <div class="tweet_image">
+    <a href="http://twitter.com/[screen_name]" 
+    title="[user_mention_title]">
+    <img src="[profile_image_url]" width="48" height="48"></a>		
+  </div>
+  <div class="tweet_right">
+    <div class="tweet_screen_name">
+      <a href="http://twitter.com/[screen_name]" 
+        title="[user_mention_title]">[screen_name]</a>
+      <span class="tweet_name">[name]</span>
+    </div>
+    <div class="nlp_btn">
+	<FORM>
+	    <INPUT TYPE="button" value=SentimentAnalyze>
+      <input type="button" value=Geolocation onClick="parent.location='index.php?addr=[address]&id=[mapid]'">
+	</FORM>
+    </div>
+    <div class="tweet_text">[tweet_text]
+      <div class="tweet_date">
+        <a href="http://twitter.com/[screen_name]/status/[tweet_id]" 
+          title="[tweet_display_title]">[created_at]</a>
+      </div>
+    </div></br>
+    <div id=[mapid] class='gmap_canvas'>Loading map...</div>
+    <div class='map-label'>Map shows approximate location.</div>
+  </div>
+</div>
+<div class="tweet_left">
+    <img src="image/face_plain.png" alt='smile face' width="48" height="48">
+</div><hr>
